@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="container">
       <WatchListContextProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/TradingKing-ReactApp/">
           <Routes>
             <Route path="/" element={<StockOverviewPage />} />
             <Route path="/detail/:symbol" element={<StockDetailPage />} />
